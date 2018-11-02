@@ -1,0 +1,32 @@
+<button mdc-button [primary]="true" [raised]="true">My Button</button>
+
+<button mdc-fab>
+  <mdc-icon>edit</mdc-icon>
+</button>
+
+<mdc-card class="demo-card" outlined>
+  <div class="demo-card-article-group-heading" mdcSubtitle2>Headlines</div>
+  <mdc-list-divider></mdc-list-divider>
+  <mdc-ripple class="demo-card-article" *ngFor="let s of stiri">
+    <h2 class="demo-card-article__title" mdcHeadline5>{{s.titlu}}</h2>
+    <p class="demo-card-article__snippet" mdcBody2>
+      {{s.continut}}.
+    </p>
+  </mdc-ripple>
+  <mdc-list-divider></mdc-list-divider>
+  <mdc-card-actions fullBleed>
+    <button mdc-button mdcCardAction="button">
+        All Business Headlines
+        <mdc-icon>arrow_forward</mdc-icon>
+      </button>
+  </mdc-card-actions>
+</mdc-card>
+
+<button mdc-fab extended label="Trimite" class="blackFab" color="primary"></button>
+
+<button class="mdc-fab mdc-fab--mini">Test</button>
+
+<button class="mdc-fab mdc-fab--extended">
+  <span class="material-icons mdc-fab__icon">add</span>
+  <span class="mdc-fab__label">Create</span>
+</button>
